@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            position: relative;
+            border-radius: 10px;
+            background-image: linear-gradient(#fcfc33, #ff5555);
+            padding: 10px 20px 100px 10px;
+            width: 600px;
+            height: 300px;
+            margin: auto;
+            margin-top: 150px;
+        }
+        
+        input,
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            margin: 5px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 17px;
+            line-height: 20px;
+            text-decoration: beige;
+        }
+        
+        input:hover,
+        .btn:hover {
+            opacity: 1;
+        }
+        
+        .google {
+            background-image: radial-gradient(red, blue);
+            color: rgb(248, 241, 241);
+            margin-top: auto;
+        }
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .tan {
+            text-align: center;
+            color: rgb(4, 250, 37);
+            text-shadow: 3px 3px 5px red;
+            position: relative;
+        }
+        
+        .col {
+            float: left;
+            width: 50%;
+            margin: auto;
+            padding: 0 50px;
+            margin-top: 6px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            background-color: azure;
+        }
+        
+        .vl {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border: 2px solid #ddd;
+            height: 175px;
+        }
+        
+        .vl-innertext {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f3f2f2;
+            border: 5px solid #ccc;
+            border-radius: 50%;
+            padding: 8px 8px;
+        }
+        
+        .hide-md-lg {
+            display: none;
+        }
+        
+        .bottom-container {
+            position: relative;
+            text-align: center;
+            background-color: rgb(118, 206, 101);
+            border-radius: 10px;
+            margin: auto;
+            width: 600px;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .col {
+                width: 100%;
+                margin-top: 0;
+            }
+            .vl {
+                display: none;
+            }
+            .hide-md-lg {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <body>
+
+
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <h1 class="tan"><label for="Taangle">TAANGLE</label></h1>
+                    <div class="vl">
+                        <span class="vl-innertext">or</span>
+                    </div>
+                    <div class="col">
+                        <div class="hide-md-lg">
+                            <p>Or sign in manually:</p>
+                        </div>
+
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </div>
+
+                    <div class="col">
+
+                        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+              </i> Login with Gmail
+            </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-container">
+            <div class="row">
+                <div class="col">
+                    <a href="#" style="color:white" class="btn">CONNECT UP</a>
+                </div>
+                <div class="col">
+                    <a href="#" style="color:white" class="btn">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>
